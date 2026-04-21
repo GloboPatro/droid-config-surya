@@ -19,6 +19,9 @@ Requires: libhybris-libEGL
 Requires: libhybris-libGLESv2
 Requires: libhybris-libwayland-egl
 
+# For mount partitions
+Requires: parse-android-dynparts
+
 # Sensors
 Requires: hybris-libsensorfw-qt5
 
