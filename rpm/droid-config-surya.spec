@@ -7,6 +7,8 @@
 %define vendor_pretty Xiaomi
 %define device_pretty Poco X3 NFC
 
+%define android_version_major 11
+
 # Community HW adaptations need this
 %define community_adaptation 1
 
@@ -22,9 +24,10 @@ Obsoletes: usb-moded-defaults
 # Pixel ratio 1.0 was originally jolla phone with 245ppi, and the devices
 # should roughly have their ppi compared to that. Large displays can use
 # bigger ratio if seen fit. Values are with 0.25 increments.
-%define pixel_ratio 1.0
+%define pixel_ratio 1.5
 
-%define android_version_major 11
+#%define ofono_enable_plugins bluez5,hfp_ag_bluez5
+#%define ofono_disable_plugins bluez4,dun_gw_bluez4,hfp_ag_bluez4,hfp_bluez4,dun_gw_bluez5,hfp_bluez5
 
 %include droid-configs-device/droid-configs.inc
 %include patterns/patterns-sailfish-device-adaptation-surya.inc
