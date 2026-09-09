@@ -2,7 +2,7 @@
 Description=wifisetup
 Conflicts=shutdown.target actdead.target
 After=droid-hal-init.service
-Before=bluebinder.service connman.service
+Before=connman.service
 
 [Service]
 Type=oneshot
