@@ -30,6 +30,9 @@ Requires: jolla-settings-accounts-extensions-3rd-party-all
 # Required for Jolla Store Access
 Requires: patterns-sailfish-consumer-generic
 
+# Flashlight
+Requires: jolla-settings-system-flashlight
+
 # For Mozilla location services (online)
 Requires: geoclue-provider-mlsdb
 
