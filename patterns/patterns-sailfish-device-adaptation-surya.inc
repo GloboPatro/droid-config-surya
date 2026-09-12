@@ -22,6 +22,9 @@ Requires: libhybris-libwayland-egl
 # For mount partitions
 Requires: parse-android-dynparts
 
+# Bluetooth
+Requires: bluebinder
+
 # Sensors
 Requires: hybris-libsensorfw-qt5
 
@@ -70,6 +73,9 @@ Requires: jolla-devicelock-daemon-encsfa
 # For GPS
 Requires: geoclue-provider-hybris
 
+# For suspend to work with enabled Wi-Fi on newer Qualcomm devices
+Requires: sailfish-connman-plugin-suspend
+
 # For FM radio on some QCOM devices
 Requires: qt5-qtmultimedia-plugin-mediaservice-irisradio
 Requires: jolla-mediaplayer-radio
@@ -78,8 +84,8 @@ Requires: jolla-mediaplayer-radio
 # 1. binder plugin requires Android 8 or a newer base
 # 2. pn54x plugin talks directly to pn54x driver
 # These plugins are mutually exclusive, you need to pick one:
-#Requires: nfcd-binder-plugin
-Requires: nfcd-pn54x-plugin
+Requires: nfcd-binder-plugin
+#Requires: nfcd-pn54x-plugin
 
 # Splash screen
 Requires: yamuisplash
